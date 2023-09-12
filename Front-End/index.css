@@ -176,6 +176,25 @@ nav {
   font-size: 20px;
 }
 
+.main-card {
+  max-width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+}
+
 .main-card .companies {
   display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 100px;
+}
+
+.main-card .companies p {
+  color: #ffffff;
+  align-self: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 10px;
 }
