@@ -44,6 +44,12 @@ nav {
   margin-left: 40px;
   font-weight: 500;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-center p:hover {
+  scale: 1.1;
+  color: #8a00f6;
 }
 
 .nav-end {
@@ -116,6 +122,11 @@ nav {
 .T-card img {
   width: 100%;
   height: 100%;
+  transition: 0.4s;
+}
+
+.T-card img:hover {
+  scale: 1.2;
 }
 
 .text p {
@@ -177,9 +188,39 @@ nav {
 }
 
 .main-card {
-  max-width: 80%;
+  max-width: 100%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+}
+
+@keyframes kiri {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes kanan {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.left-anim {
+  display: flex;
+}
+
+.right-anim {
+  display: flex;
+  display: flex;
   margin: auto;
   justify-content: center;
 }
@@ -197,4 +238,128 @@ nav {
   font-size: 30px;
   font-weight: 600;
   margin-left: 10px;
+}
+
+/* .main-card .companies-second {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 100px;
+  animation: kanan 5s infinite linear;
+}
+
+.main-card .companies-second p {
+  color: #ffffff;
+  align-self: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 10px;
+} */
+
+@media screen and (max-width: 1000px) {
+  .main-card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .left-anim {
+    display: flex;
+    overflow-x: hidden;
+  }
+
+  .right-anim {
+    display: flex;
+    overflow-x: hidden;
+  }
+
+  .main-card .companies {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    animation: kiri 5s infinite linear;
+  }
+
+  .main-card .companies p {
+    color: #ffffff;
+    align-self: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+
+  /* .main-card .companies-second {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    animation: kanan 5s infinite linear;
+  }
+
+  .main-card .companies-second p {
+    color: #ffffff;
+    align-self: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 10px;
+  } */
+}
+
+.container-card {
+  width: 90%;
+  margin: auto;
+  justify-content: space-around;
+  margin-top: 100px;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.container-card .main-text {
+  color: #ffffff;
+}
+
+.main-text .judul-text {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.main-text .second-text {
+  color: #b6b6b6;
+  font-size: 20px;
+}
+
+.main-line {
+  width: 80%;
+  margin: auto;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 800px) {
+  .container-card {
+    width: 90%;
+    margin: auto;
+    margin-top: 70px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .container-card .main-text {
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    color: #ffffff;
+  }
+
+  .main-text .judul-text {
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .main-text .second-text {
+    color: #b6b6b6;
+    font-size: 15px;
+    max-width: 180px;
+  }
 }
