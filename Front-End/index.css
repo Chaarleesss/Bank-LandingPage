@@ -492,6 +492,46 @@ nav {
   .container-app {
     flex-direction: column;
     margin: auto;
+    margin-bottom: 400px;
+  }
+  .why-container {
+    height: 100%;
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .explain-container {
+    height: 100%;
+    width: 100%;
+  }
+
+  .ex-text-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  .ex-text-container-2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .explain-text {
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  .explain-text .ex-sub {
+    font-size: 12px;
+    font-weight: 300;
+    color: #acacac;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container-app {
+    flex-direction: column;
+    margin: auto;
     margin-bottom: 500px;
   }
   .why-container {
@@ -520,6 +560,11 @@ nav {
   .explain-text {
     margin-bottom: 20px;
     margin-left: 10px;
+  }
+  .explain-text .ex-sub {
+    font-size: 12px;
+    font-weight: 300;
+    color: #acacac;
   }
 }
 
