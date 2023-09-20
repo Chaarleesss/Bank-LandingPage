@@ -378,11 +378,6 @@ nav {
   margin-left: 20px;
 }
 
-.explain-container {
-  height: 100%;
-  width: 60%;
-}
-
 .why-text .head-why {
   color: #ffffff;
   font-size: 70px;
@@ -456,6 +451,41 @@ nav {
   font-size: 15px;
 }
 
+.explain-container {
+  height: 100%;
+  width: 60%;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+}
+
+.ex-text-container {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.ex-text-container-2 {
+  display: flex;
+}
+
+.explain-text .ex-num {
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.explain-text .ex-head {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.explain-text .ex-sub {
+  font-size: 15px;
+  font-weight: 300;
+  color: #acacac;
+}
+
 @media screen and (max-width: 1000px) {
   .container-app {
     flex-direction: column;
@@ -470,5 +500,22 @@ nav {
   .explain-container {
     height: 100%;
     width: 100%;
+  }
+
+  .ex-text-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  .ex-text-container-2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .explain-text {
+    margin-bottom: 20px;
+    margin-left: 10px;
   }
 }
