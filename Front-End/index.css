@@ -377,7 +377,7 @@ nav {
   width: 40%;
   display: flex;
   align-items: center;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .why-text .head-why {
@@ -492,7 +492,7 @@ nav {
   .container-app {
     flex-direction: column;
     margin: auto;
-    margin-bottom: 400px;
+    height: max-content;
   }
   .why-container {
     height: 100%;
@@ -532,7 +532,6 @@ nav {
   .container-app {
     flex-direction: column;
     margin: auto;
-    margin-bottom: 500px;
   }
   .why-container {
     height: 100%;
@@ -570,13 +569,15 @@ nav {
 
 .solutions-container {
   width: 80%;
-  height: 600px;
+  height: fit-content;
+  padding-bottom: 80px;
   background-color: #202020;
   background-image: url(../Image/lines-2.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 30px;
   margin: auto;
+  margin-bottom: 200px;
 }
 
 .sol-head {
@@ -656,6 +657,14 @@ nav {
 }
 
 @media screen and (max-width: 1200px) {
+  .solutions-container {
+    width: 90%;
+    height: fit-content;
+    background-color: #202020;
+    border-radius: 30px;
+    margin: auto;
+    padding-bottom: 0;
+  }
   .sol-card {
     width: 350px;
     height: 200px;
@@ -667,13 +676,7 @@ nav {
   .sol-card-container {
     flex-wrap: wrap;
   }
-  .solutions-container {
-    width: 80%;
-    height: fit-content;
-    background-color: #202020;
-    border-radius: 30px;
-    margin: auto;
-  }
+
   .sol-head {
     width: 80%;
     margin: auto;
