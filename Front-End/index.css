@@ -664,6 +664,7 @@ nav {
     border-radius: 30px;
     margin: auto;
     padding-bottom: 0;
+    margin-bottom: 100px;
   }
   .sol-card {
     width: 350px;
@@ -707,5 +708,121 @@ nav {
     text-decoration: none;
     color: #f5f5f5;
     margin-right: 10px;
+  }
+}
+
+.mobile-container {
+  width: 80%;
+  height: 600px;
+  background-color: #202020;
+  background-image: url(../Image/lines-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  margin: auto;
+  border-radius: 20px;
+  position: relative;
+}
+
+.m-content-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.m-text-container {
+  color: #ffffff;
+}
+
+.m-head-text {
+  font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* .m-text-container .m-head-text p {
+  font-size: 15px;
+  background: -webkit-linear-gradient(#ff00bf, #006eff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+.m-subhead-text {
+  font-size: 50px;
+  color: rgb(199, 199, 199);
+  font-weight: 500;
+  max-width: 700px;
+  margin-bottom: 20px;
+}
+
+.m-sub-text {
+  font-size: 15px;
+  color: #b6b6b6;
+  font-weight: 500;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.m-button button {
+  padding: 20px;
+  border: none;
+  outline: none;
+  background-color: #1c1c1c;
+  border-radius: 40px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.m-button button svg {
+  color: #ffffff;
+}
+
+.m-button button a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.m-img-container img {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+}
+
+@media screen and (max-width: 1400px) {
+  .m-img-container img {
+    display: none;
+  }
+
+  .m-sub-text {
+    font-size: 15px;
+    color: #b6b6b6;
+    font-weight: 500;
+    max-width: 600px;
+    margin-bottom: 20px;
+    max-width: 350px;
+  }
+  .m-content-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 20px;
+  }
+  .m-button button {
+    padding: 20px;
+    border: none;
+    outline: none;
+    background-color: #1c1c1c;
+    border-radius: 40px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
