@@ -987,6 +987,7 @@ nav {
 }
 
 footer {
+  font-family: "Readex Pro", sans-serif;
   width: 100%;
   bottom: 0;
   background: linear-gradient(to right, #464646, #222222);
@@ -994,6 +995,17 @@ footer {
   padding: 100px 0 30px;
   font-size: 13px;
   line-height: 20px;
+}
+
+.foot-start {
+  display: flex;
+  align-items: center;
+}
+
+.foot-start p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
 }
 
 .row {
