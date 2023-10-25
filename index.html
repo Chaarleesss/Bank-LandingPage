@@ -12,6 +12,15 @@
   <body>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+      // const toggleBtn = document.querySelector(".nav_icon");
+      // const toggleBtnIcon = document.querySelector(".nav_icon svg");
+      // const dropwDownMenu = document.querySelector(".dropdown_menu");
+
+      // toggleBtn.onclick = function () {
+      //   dropwDownMenu.classList.toggle("open");
+      //   const isOpen = dropwDownMenu.classList.contains("open");
+      // };
+
       AOS.init();
     </script>
     <nav>
@@ -31,10 +40,20 @@
             <a href="">Get Started</a>
           </button>
         </div>
-        <div class="nav-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" viewBox="0 0 28 24">
-            <path fill="#8a00f6" d="M2.61 0h22.431a2.61 2.61 0 1 1 0 5.22H2.61a2.61 2.61 0 1 1 0-5.22zm0 9.39h22.431a2.61 2.61 0 1 1 0 5.22H2.61a2.61 2.61 0 1 1 0-5.22zm0 9.391h22.431a2.61 2.61 0 1 1 0 5.22H2.61a2.61 2.61 0 1 1 0-5.22z" />
-          </svg>
+
+        <div class="nav_icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="dropwdown_menu">
+          <li href="#Home">Home</li>
+          <li href="#container-app">About</li>
+          <li href="#mobile-container">Apps</li>
+          <li href="#contact">Contact</li>
+          <li>
+            <button>
+              <a href="">Get Started</a>
+            </button>
+          </li>
         </div>
       </div>
     </nav>
